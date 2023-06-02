@@ -805,6 +805,7 @@ height: 25px;
  .lostpart{
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
  }
  .foundpart{
   display: flex;
@@ -814,6 +815,7 @@ height: 25px;
   display: flex;
   flex-direction: column;
   height: 115vh;
+  padding-left: 40px;
  }
  .text{
   padding-top: 100px;
