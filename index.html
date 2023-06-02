@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Homepage</title>
+
+</head>
+<body>
+
+<div id="header">
+  <div class="menu">
+      <div class="hlogo">
+        <a href="index.html">
+          <img src="logo.png" alt="">
+        </a>
+      </div>
+
+      <div class="search">
+        <input type="text" class="searchbar">
+      </div>
+
+      <div class="menu-toggle">
+        <div class="icon nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="dropdown-menu">
+          <ul class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lost Items</a></li>
+            <li><a href="#">Found Items</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <main class="snap">
+  <section class="getstartedpart">
+    <div class="text">
+      <p1>FOUND SOMETHING?<br></p1>
+      <p2>BE A HERO <br> AND TURN IT IN <br> LOFO <br></p2>
+      <p3>- someone is missing it</p3>
+      <div class="button">MORE</div>
+    </div>
+    <div class="animation">
+      <div class="ring-container">
+        <div class="ring1" ></div>
+        <div class="ring2" ></div>
+        <div class="ring3" ></div>
+        <img src="img1.png" alt="Your Image" class="image" ></img>
+      </div>
+    </div>
+  </section>
+
+  <section class="lostpart">
+    <div class="text">
+      <p2 >LOST LIFE'S <br> ONGOING <br> SURPRISES AND <br>TRIUMPHS <br></p2>
+      <p3 >- you are not lost, you are here! <br></p3>
+      <div class="button">LOST</div>
+    </div>
+    <div class="animation">
+      <div class="ring-container">
+        <div class="ring1" ></div>
+        <div class="ring2" ></div>
+        <div class="ring3"></div>
+        <img src="img2.png" alt="Your Image" class="image"></img>
+      </div>
+    </div>
+  </section>
+
+  <section class="foundpart">
+    <div class="text">
+      <p2 >FOUND FORTUNE <br> OUTCOME <br> UNDENIABLE <br>NEW DISCOVERY <br></p2>
+      <p3 >- rediscover what's missing</p3>
+      <div class="button">FOUND</div>
+    </div>
+    <div class="animation">
+      <div class="ring-container">
+        <div class="ring1"></div>
+        <div class="ring2"></div>
+        <div class="ring3"></div>
+        <img src="img3.png" alt="Your Image" class="image"></img>
+      </div>
+    </div>
+  </section>
+
+  <section class="abtuspart">
+    <div class="text">
+      <p2>ABOUT US <br></p2>
+      <p style="font-size: 35px;">Our mission is to  <br>connect people with <br> their lost belongings,<br>fostering a sense of <br> hope and relief in times <br>of distress. <br></p>
+      <div class="button">MORE</div>
+    </div>
+    <div class="animation" style="margin-bottom: 900%;">
+      <div class="ring-container">
+        <div class="ring1"></div>
+        <div class="ring2"></div>
+        <div class="ring3"></div>
+        <img src="img4.png" alt="Your Image" class="image"></img>
+      </div>
+    </div>
+  </section>
+ 
+  <div class="footer">
+    <div class="upperpart">
+      <div class="logo">
+        <a href="#">
+          <img src="logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="nav1">
+        <p>Home</p>
+        <p>Lost Items</p>
+        <p>Found Items</p>
+      </div>
+      <div class="nav2">
+        <p>About Us</p>
+        <p>Terms</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-square-facebook" class="facebook"></i></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="lowerpart">
+      <p>Copyright © 2023 LOFO. All rights reserved.</p>
+  </div>
+</div>
+</main>  
+<script>
+  window.onscroll = function() {
+      scroll();
+  };
+  function scroll() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("header").style.top = "0";
+      } else {
+          document.getElementById("header").style.top = "-260px";
+      }
+  }
+</script>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+  const closeBtn = document.querySelector('.close-button');
+
+  menuToggle.addEventListener('click', function () {
+    menuToggle.classList.toggle('open');
+  });
+
+  closeBtn.addEventListener('click', function () {
+    menuToggle.classList.remove('open');
+  });
+</script>
+<script type="text/javascript">
+  const icons = document.querySelectorAll('.icon');
+  icons.forEach (icon => {  
+    icon.addEventListener('click', (event) => {
+      icon.classList.toggle("open");
+    });
+  });
+  </script>
+</body>
+</html>
